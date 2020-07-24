@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array Assignment</title>
+    <script type="text/javascript">
+      // Task 3
+      var arr1 = ["Muhammad Hassan"];
+      // Task 4
+      var arr2 = [21];
+      // Task 5
+      var arr3 = [true];
+      // Task 6
+      var arr4 = ["Hello", 34, 45.0, false, "a"];
+
+      // Task 7
+      var network = ["jazz", "zong", "mobilink", "warid"];
+
+      // Task 8
+      var education = [
+        "SSC",
+        "HSC",
+        "BCS",
+        "BS",
+        "B.Com",
+        "MSC",
+        "MPhil",
+        "Phd",
+      ];
+
+      document.writeln(
+        "QUALIFICATION<br /><br />1)" +
+          education[0] +
+          "<br/>2)" +
+          education[1] +
+          "<br/>3)" +
+          education[2] +
+          "<br/>4)" +
+          education[3] +
+          "<br/>5)" +
+          education[4] +
+          "<br/>6)" +
+          education[5] +
+          "<br/>7)" +
+          education[1] +
+          "<br/>8)" +
+          education[1]
+      );
+
+      // Task 9
+      var movie = [];
+      movie.push("Avengers:Age of Ultron");
+      movie.push("Spectre");
+      movie.push("Jurassic World");
+      movie.push("Inside Out");
+
+      document.writeln(
+        "<br/><br/><b>TOP MOVIES OF 2015</b> <br/><br/> 1)" +
+          movie[0] +
+          "<br/> 2)" +
+          movie[1] +
+          "<br/> 3)" +
+          movie[2] +
+          "<br/> 4)" +
+          movie[3]
+      );
+      document.writeln("<br /> <br />Length of Array is " + movie.length);
+
+      // Task 10
+
+      var cars = ["Audi", "Volvo", "Ford", "Lamborghini"];
+
+      document.writeln(
+        "<br/><br/><b>Favorite Cars</b> <br/><br/>" +
+          cars[0] +
+          "," +
+          cars[1] +
+          "," +
+          cars[2] +
+          "," +
+          cars[3]
+      );
+      document.writeln(
+        "<br /><br/>First Index of Array is " + cars.indexOf("Audi")
+      );
+      document.writeln("<br />Car at first index of array is " + cars[0]);
+      document.writeln(
+        "<br />Last index of Array is " + cars.indexOf("Lamborghini")
+      );
+      document.writeln("<br />Car at last index of array is " + cars[3]);
+
+      // Task 11
+
+      var name = ["Hassan", "Hunain", "Usama"];
+      var num = [470, 420, 430];
+
+      document.writeln(
+        "<br/><br/>Score of " +
+          name[0] +
+          " is " +
+          num[0] +
+          " .Percentage is " +
+          (num[0] / 500) * 100
+      );
+      document.writeln(
+        "<br/>Score of " +
+          name[1] +
+          " is " +
+          num[1] +
+          " .Percentage is " +
+          (num[1] / 500) * 100
+      );
+      document.writeln(
+        "<br/>Score of " +
+          name[2] +
+          " is " +
+          num[2] +
+          " .Percentage is " +
+          (num[2] / 500) * 100
+      );
+
+      // Task 12
+      var colors = [];
+      colors = ["red", "green", "blue", "yellow"];
+
+      // a
+
+      var a = prompt("What color do you want to enter in the begining : ");
+
+      document.writeln(
+        "<br /><br />" +
+          colors[0] +
+          "," +
+          colors[1] +
+          "," +
+          colors[2] +
+          "," +
+          colors[3] +
+          "<br />"
+      );
+      colors.unshift(a);
+      document.writeln(
+        colors[0] +
+          "," +
+          colors[1] +
+          "," +
+          colors[2] +
+          "," +
+          colors[3] +
+          "," +
+          colors[4]
+      );
+
+      // b
+
+      var b = prompt("What color do you want to enter in the end : ");
+
+      document.writeln(
+        "<br /><br />" +
+          colors[0] +
+          "," +
+          colors[1] +
+          "," +
+          colors[2] +
+          "," +
+          colors[3] +
+          "<br />"
+      );
+      colors.push(b);
+      document.writeln(
+        colors[0] +
+          "," +
+          colors[1] +
+          "," +
+          colors[2] +
+          "," +
+          colors[3] +
+          "," +
+          colors[4]
+      );
+
+      // c
+
+      colors.unshift("purple");
+      colors.unshift("pink");
+
+      document.writeln(
+        "<br/> <br />" +
+          colors[0] +
+          "," +
+          colors[1] +
+          "," +
+          colors[2] +
+          "," +
+          colors[3] +
+          "," +
+          colors[4] +
+          "," +
+          colors[5] +
+          "," +
+          colors[6]
+      );
+
+      //d
+
+      colors.shift();
+      document.writeln(
+        colors[0] + "," + colors[1] + "," + colors[2] + "," + colors[3]
+      );
+
+      //e
+      colors.pop();
+      document.writeln(
+        colors[0] + "," + colors[1] + "," + colors[2] + "," + colors[3]
+      );
+
+      var ask1 = prompt("At which index you want to Add new Color :");
+      var askcolor = prompt("what color you want to Add :");
+
+      colors.splice(ask1, 1, askcolor);
+
+      document.writeln(
+        colors[0] + "," + colors[1] + "," + colors[2] + "," + colors[3]
+      );
+      //f
+      var ask2 = prompt("To Index :");
+      var ask3 = prompt("From Index :");
+      //g
+      colors.splice(ask2, ask3);
+      for (var i = 0; i < colors.length; i++) {
+        document.writeln("<br />" + colors[i] + ",");
+      }
+
+      // Task 13
+
+      var numbers = [320, 230, 480, 120];
+
+      for (var i = 0; i < numbers.length; i++) {
+        for (var j = i + 1; j < numbers.length; j++) {
+          if (numbers[i] > numbers[j]) {
+            var temp = numbers[i];
+            numbers[i] = numbers[j];
+            numbers[j] = temp;
+          }
+        }
+      }
+      for (var i = 0; i < colors.length; i++) {
+        document.writeln("<br />" + numbers[i] + ",");
+      }
+
+      //Task 14
+
+      var fruit = ["strawbery", "apple", "orange", "banana"];
+      for (var i = 0; i < fruit.length; i++) {
+        document.writeln(fruit[i] + " ");
+      }
+
+      for (var i = 0; i < fruit.length; i++) {
+        for (var j = i + 1; j < fruit.length; j++) {
+          if (fruit[i] > fruit[j]) {
+            var temp = fruit[i];
+            fruit[i] = fruit[j];
+            fruit[j] = temp;
+          }
+        }
+      }
+      document.writeln("<br />After Sort :");
+      for (var i = 0; i < fruit.length; i++) {
+        document.writeln(fruit[i] + " ");
+      }
+
+      // Task 15
+
+      var cities1 = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawer"];
+      document.writeln("<br/>Cities List<br/>");
+      for (var i = 0; i < cities1.length; i++) {
+        document.writeln(cities1[i] + " ");
+      }
+      var selectedCities = [];
+      selectedCities = cities1.slice(2, 4);
+
+      for (var i = 0; i < selectedCities.length; i++) {
+        document.writeln("<br />" + selectedCities[i] + " ");
+      }
+
+      // Task 16
+
+      var arrr = ["This", "is", "my", "cat"];
+      var joinArray = "A";
+      joinArray = arrr.concat();
+      document.writeln(joinArray);
+
+      // Task 17
+
+      var newArr = [];
+      newArr.unshift("Keyboard", "Mouse", "Printer", "Monitor");
+
+      document.writeln("<br /><br />Devices :");
+      for (var i = 0; i < newArr.length; i++) {
+        document.writeln(newArr[i] + " ");
+      }
+      for (var i = 0; i < 4; i++) {
+        document.writeln("<br/>OUT : " + newArr.shift());
+      }
+
+      // Taslk 18
+
+      var newArr = [];
+      newArr.push("Keyboard", "Mouse", "Printer", "Monitor");
+
+      document.writeln("<br /><br />Devices :");
+      for (var i = 0; i < newArr.length; i++) {
+        document.writeln(newArr[i] + " ");
+      }
+      for (var i = 0; i < 4; i++) {
+        document.writeln("<br/>OUT : " + newArr.pop());
+      }
+
+      // Task 22
+
+      var multiArray = [];
+      multiArray = [
+        [0, 1, 2, 3],
+        [1, 0, 1, 2],
+        [2, 1, 0, 1],
+      ];
+
+      // Task 21
+
+      var multiArray = [];
+      multiArray = [
+        [0, 1, 2, 3],
+        [1, 0, 1, 2],
+        [2, 1, 0, 1],
+      ];
+
+      for (var i = 0; i < multiArray.length; i++) {
+        document.writeln("<br />" + multiArray[i]);
+      }
+
+      //TAsk 19
+
+      var ar = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+      document.getElementById("opt").innerText = ar[0];
+    </script>
+  </head>
+  <body>
+    <select>
+      <option id="opt"></option>
+    </select>
+  </body>
+</html>

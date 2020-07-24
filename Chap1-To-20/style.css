@@ -1,0 +1,38 @@
+body{
+    background-image: url(./image/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.main-heading{
+    text-align: center;
+    color: #ffffff;
+}
+.sub-heading{
+    text-align: center;
+    color: #ffffff;
+}
+
+.chaps{
+    text-decoration: none;
+    transition: all .4s ease;
+    text-align: center;
+    padding: 5px;
+}
+.chap{
+    width: 310px;
+    height: auto;
+   border: 2px solid #fff;
+   text-decoration: none;
+    margin: 20px auto;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.chap:hover{
+    background: #fff;
+    color: black;
+    transition: all .4s ease;
+    cursor: pointer;
+}

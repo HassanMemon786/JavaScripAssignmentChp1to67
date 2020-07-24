@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concatinating String</title>
+
+    <script>
+      // task 1
+
+      var name = prompt("Please Enter Your Name :");
+      alert("Hi, " + name);
+
+      //task 2
+
+      var num = prompt("Enter The Number of Table :");
+      num = parseInt(num);
+
+      document.write("<h1>Multiplication Table of ", num, "</h1><br/>");
+
+      for (var i = 1; i <= 10; i++) {
+        document.write(num, " X ", i, " = ", num * i, "<br/>");
+      }
+
+      // task 3
+
+      var city = prompt("Enter Your City Name :");
+      if (city === "karachi" || city === "Karachi") {
+        alert("Welcome to City Of Light");
+      } else {
+        alert("Sorry !! <br/>You Enter Wrong City");
+      }
+
+      // task 4
+
+      var gen = prompt("Please Enter your gender :");
+      if (gen === "male" || gen === "Male") {
+        alert("Good Morning Sir");
+      } else if (gen === "female" || gen === "Female") {
+        alert("Good Morning Ma'am");
+      }
+
+      // task 5
+
+      var signal = prompt("Selecet a Traffic Signal :");
+      if (signal === "red" || signal === "Red") {
+        alert("Vehicles Must Stop");
+      } else if (signal === "yellow" || signal === "Yellow") {
+        alert("Vehicles should get ready to move");
+      } else if (signal === "green" || signal === "Green") {
+        alert("Vehicles can move now");
+      } else {
+        alert("Wrong Signal !! ");
+      }
+
+      // task 6
+
+      var mage = prompt("Enter Max Age :");
+      var cage = prompt("Enter Current Age :");
+
+      if (cage <= mage) {
+        alert("You are Welcome");
+      }
+
+      // task 7
+
+      var remainFuel = prompt("Enter Remaining Fuel in Car in liters :");
+      if (remainFuel > 0.25) {
+        alert("Please Refill the fuel in car ");
+      }
+
+      // task 8
+
+      var a = 4;
+      if (++a === 5) {
+        alert("given condition for variable is true ");
+      }
+
+      var b = 82;
+      if (b++ === 83) {
+        alert("given condition is true");
+      }
+      var c = 12;
+      if (c++ === 13) {
+        alert("condition 1 is true");
+      }
+      if (c === 13) {
+        alert("condition 2 is true");
+      }
+      if (++c < 14) {
+        alert("condition 3 is true");
+      }
+      if (c === 14) {
+        alert("condition 4 is true");
+      }
+
+      var materialCost = 20000;
+      var laborCost = 2000;
+      var totalCost = materialCost + laborCost;
+      if (totalCost === laborCost + materialCost) {
+        alert("The cost equals");
+      }
+
+      if (true) {
+        alert("True");
+      }
+      if (false) {
+        alert("False");
+      }
+
+      if ("car" < "cat") {
+        alert("car is smaller than cat");
+      }
+
+      // task 9
+
+      var sub1 = prompt("Enter Marks of subject 1 : ");
+      var sub2 = prompt("Enter Marks of Subject 2 : ");
+      var sub3 = prompt("Enter Marks of Subject 3 : ");
+
+      sub1 = parseInt(sub1);
+      sub2 = parseInt(sub2);
+      sub3 = parseInt(sub3);
+      var tmarks = sub1 + sub2 + sub3;
+      var per = (tmarks / 300) * 100;
+      document.write("<h1>Marks Sheet</h1>");
+      if (per >= 80) {
+        document.write(
+          "Total Marks : 300 <br/>Marks Obtained : ",
+          tmarks,
+          "<br/>Percentage : ",
+          per,
+          "<br/>Grade is A-one <br/>Remarks : Excelent"
+        );
+      } else if (per >= 70) {
+        document.write(
+          "Total Marks : 300 <br/>Marks Obtained : ",
+          tmarks,
+          "<br/>Percentage : ",
+          per,
+          "<br/>Grade is A <br/>Remarks : Good"
+        );
+      } else if (per >= 60) {
+        document.write(
+          "Total Marks : 300 <br/>Marks Obtained : ",
+          tmarks,
+          "<br/>Percentage : ",
+          per,
+          "<br/>Grade is B <br/>Remarks : You need to improve"
+        );
+      } else if (per < 60) {
+        document.write(
+          "Total Marks : 300 <br/>Marks Obtained : ",
+          tmarks,
+          "<br/>Percentage : ",
+          per,
+          "<br/>Grade is Fail <br/>Remarks : Sorry"
+        );
+      }
+
+      // task 10
+
+      document.write("<h1>Shopping Cart</h1>");
+
+      var item1 = prompt("Enter Name of Item 1 :");
+      var pitem1 = prompt("Enter Price of Item 1 :");
+      var oq1 = prompt("Enter Order quantity of Item 1 :");
+      var item2 = prompt("Enter Name of item 2 :");
+      var pitem2 = prompt("Enter Price of Item 2 :");
+      var oq2 = prompt("Enter Order quantity of Item 2 :");
+      var shipcharges = prompt("Enter Shiping charges :");
+
+      var ti1 = pitem1 * oq1;
+      var ti2 = pitem2 * op2;
+      var tot = ti1 + ti2 + shipcharges;
+      var dis = 0;
+      document.write("Price of ", item1, " is ", pitem1);
+      document.write("<br/>Quantity of ", item1, " is ", oq1);
+      document.write("<br/>Price of ", item2, " is ", pitem2);
+      document.write("<br/>Quantity of ", item2, " is ", oq2);
+      document.write("<br/>Shipping Charges is ", shipcharges);
+
+      document.write("<br/><br/>Total cost of your order is : ", tot);
+
+      if (tot >= 2000) {
+        dis = (tot * 10) / 100;
+        tot = tot - dis;
+      }
+      document.write("<br/>Discount Price is : ", tot);
+
+      // task 11
+
+      alert("Guess Game :");
+      var n = prompt("Select a number from a range of 1 to 10 ");
+      if (n === 4) {
+        alert("Bingo! Correct");
+      } else if (n > 4) {
+        n--;
+        alert("Close Enough to correct answer");
+      } else if (n < 4) {
+        n++;
+        alert("Close Enough to correct answer");
+      }
+
+      // task 12
+
+      var nn = prompt("Enter a Number to check it is divisible by 3 or not :");
+      if (nn % 3 == 0) {
+        alert("Number is Divisible by 3 ");
+      } else {
+        alert("Number is not Divisible by 3 ");
+      }
+
+      // task 13
+
+      var name1 = prompt("Enter Name of Team A :");
+      var totscore1 = prompt("Enter Total Score of Team A :");
+
+      var name2 = prompt("Enter Name of Team B :");
+      var totscore2 = prompt("Enter Total Score of Team B :");
+
+      if (totscore1 > totscore2) {
+        alert("Team ", name1, " is Won the Game ");
+      } else if (totscore2 > totscore2) {
+        alert("Team ", name2, " is Won the Game ");
+      } else if (totscore1 === totscore2) {
+        alert("Tie between Team ", nam1, " and ", name2);
+      }
+
+      // task 14
+
+      var country = "Pakistan";
+      var numbers = 92;
+      var bool = true;
+
+      alert(country, " is a String ");
+      alert(numbers, " is a Number ");
+      alert(bool, " is a Boolean");
+
+      // task 15
+
+      var check = prompt("Enter a number to check its even or odd :");
+      if (check % 2 == 0) {
+        alert("Even Number ");
+      } else {
+        alert("Odd Number ");
+      }
+
+      // task 16
+
+      document.write("<h1>Weather Report </h1>");
+      var temp = prompt("Enter Temperature :");
+
+      if (temp > 40) {
+        document.write("It is too hot outside");
+      } else if (temp > 30) {
+        document.write("<br/>The Weather today is normal");
+      } else if (temp > 20) {
+        document.write("<br/>Today's Weather is Cool");
+      } else if (temp > 10) {
+        document.write("<br/>OMG!! Today's Weather is so cool");
+      }
+
+      // task 17
+      alert("Calculator");
+      var number1 = prompt("Enter Number 1 :");
+      var number2 = prompt("Enter Number 2 :");
+      var opr = prompt(
+        "Enter Operator : <br/>+ for Addition<br/>- for Subtraction<br/>* for Multiplication<br/>/ for Division"
+      );
+      number1 = parseInt(number1);
+      number2 = parseInt(number2);
+
+      if (opr == "+") {
+        alert("Addition is ", number1 + number2);
+      } else if (opr == "-") {
+        alert("Subtraction is ", number1 - number2);
+      } else if (opr == "*") {
+        alert("Multiplication is ", number1 * number2);
+      } else if (opr == "/") {
+        alert("Division is ", number1 / number2);
+      }
+
+      // task 18
+
+      var day = prompt("Enter name of day :");
+      if (
+        day == "monday" ||
+        day == "tuesday" ||
+        day == "wednesday" ||
+        day == "thursday" ||
+        day == "friday"
+      );
+      {
+        alert("Its a Week Days");
+      }
+      if (day == "saturday") {
+        alert("It's Weekend");
+      } else if (day == "sunday") {
+        alert("Yay! It's holiday");
+      }
+
+      // task 19
+
+      var score = prompt("Enter your score ");
+      if (score >= 50) {
+        alert("you are Passed ");
+      } else {
+        alert("Try Again");
+      }
+
+      // task 20
+
+      var n1 = prompt("Enter number 1 ");
+      var n2 = prompt("Enter number 2 ");
+      if (n1 > n2) {
+        alert("The greater number between ", n1, " and ", n2, " is ", n1);
+      } else {
+        alert("The greater number between ", n1, " and ", n2, " is ", n2);
+      }
+
+      // task 21
+
+      var lang = prompt("Enter any one Language code<br/>zn<br/>en<br/>ur :");
+      if (lang == "zn") {
+        alert("你好，世界。！");
+      } else if (lang == "en") {
+        alert("Hello World !");
+      } else if (lang == "ur") {
+        alert("ہیلو ورلڈ!");
+      }
+
+      // task 22
+
+      var nm = prompt(
+        "Enter a number to check whether it's positive or negative"
+      );
+      if (nm < 0) {
+        alert("Negative Number");
+      } else {
+        alert("Positive Number");
+      }
+
+      // task 23
+
+      var nmm = prompt("Enter a number ");
+      var noun = prompt("Enter a Noun");
+      alert(nmm, " ", noun);
+
+      alert("The End");
+    </script>
+  </head>
+  <body></body>
+</html>

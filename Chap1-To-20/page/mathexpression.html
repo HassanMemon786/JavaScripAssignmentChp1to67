@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Expression</title>
+    <script>
+    
+    
+    // task 1
+
+    var num1 = 13,num2 = 9;
+    sum = num1 + num2 ;
+
+    alert("Sum of "+num1+" and "+num2+" is "+sum);
+
+    // task 2
+
+    var sub = num1-num2;    
+    alert("Subtraction of "+num1+" and "+num2+" is "+sub);
+
+    alert("Multiplication of "+num1+" and "+num2+" is "+num1 * num2);
+
+    alert("Division of "+num1+" and "+num2+" is "+num1/num2); 
+
+    // task 3
+
+    document.write("<h1>Variables</h1>");
+    var num3;
+    document.write("Value after declaration is :"+num3);
+
+    num3 = 3;
+
+    document.write("<br />Value after initialization is : "+num3);   
+    num3++;
+    
+    document.write("<br />Value after increment is :"+num3);
+
+    num3 +=7;
+    document.write("<br/>Value after addition is :"+num3);
+    num3--;
+    document.write("<br/>Value after decrement is :"+num3);
+    document.write("<br/>The reminder is : "+num3%3);    
+    
+    // task 4
+
+    var cost = 600;
+
+    document.write("<br/><br/> Cost of Buy 5 ticket is : ", cost*5);
+
+    // task 5
+
+    document.write("<br><br><br><h1>Multiplication Table of 4 </h1><br/>");
+    for(var i=1;i<=10;i++)
+    {
+        document.write("4 X "+i+" = "+(4*i)+"<br/>");
+    }
+
+    // task 6
+
+    var celsius = 12;
+    var fahrenheit = (celsius * 9/5) + 32;
+    document.write("<br/><br/><h1>Degree Conversion</h1>");
+    document.write("<br/>12 Degree Celcius is "+fahrenheit+" Degree Fahrenheit<br/>");
+
+    var far = 68;
+    var cel = (far - 32)*5/9;
+
+    document.write("68 Degree Fahrenheit is "+cel+" Degree Celcius<br/>");
+
+    // task 7
+
+    var item1 = 560;
+    var item2 = 200;
+    var qitem1 = 2;
+    var qitem2 = 5;
+    var shipCharges = 150;
+    document.write("<br/><br/><h1>Shopping Cart</h1>")
+    document.write("<br/>Price of Item 1 is "+item1);
+    document.write("<br/>Quantity of Item 1 is "+qitem1);
+    document.write("<br/>Price of Item 2 is "+item2);
+    document.write("<br/>Quantity of Item 1 is "+qitem2);
+    document.write("<br/><br/>Shipping charges is "+shipCharges);
+    var total=(item1*qitem1)+(item2*qitem2)+(shipCharges);
+    document.write("<br/><br/>Total Cost of your order is "+total+" PKR");
+
+
+    // task 8
+
+    var totalmarks = 1200;
+    var obtainedmarks = 900;
+    
+    document.write("<br/><br/><h1>Mark Sheet</h1>")
+    document.write("<br/>Total Marks : "+totalmarks);
+    document.write("<br/>Obtained Marks : "+obtainedmarks);
+    document.write("<br/>Percentage : "+(obtainedmarks/total)*100+"%");
+
+
+    // task 9
+
+    document.write("<br/><br/><h1>Currency Exchange in PKR</h1>");
+    var us = 104;
+    var riyal = 28;
+    var res = (us*10)+(riyal*25);
+    document.writeln("<br/>Total currency in PKR is "+res);
+
+    // task 10
+
+    var a = 1;
+    a = (((a+5)*10)/2);
+    alert(a);
+
+    // task 11
+
+    document.write("<br/><h1>Age Calculator</h1>");
+    var curryear = 2018;
+    var birthYear = 1997;
+    var exact = curryear - birthYear;
+    var exact2 = exact+1;
+    document.writeln("<br/>They are either "+exact+" or "+exact2+" Year Old");
+
+    // task 12
+
+    document.write("<h1>The Geometrizer</h1>");
+    var radius = 12;
+    var circum = 2*3.142*radius;
+    var area = 3.142*radius*radius;
+    document.write("<br/>The Radius is "+radius);
+    document.write("<br/>The Circumference of is ",circum);
+    document.write("<br/>The Area is "+area);
+
+    // task 13
+
+    var number = 10;
+    document.write("<h1>Results</h1>");
+    document.write("<br/>The Value of Number is "+number);
+    document.write("<br/>..........................................<br/>");
+    document.write("<br/>The Value of ++Number is "+(++number));
+    document.write("<br/>Now the Value of Number is "+number);
+    document.write("<br/><br/>The Value of Number++ is "+number++);
+    document.write("<br/>Now the Value of Number is "+number);
+    document.write("<br/><br/>The Value of --Number is "+--number);
+    document.write("<br/>Now the Value of Number is "+number);
+    document.write("<br/><br/>The Value of Number-- is "+number--);
+    document.write("<br/>Now the Value of Number is "+number);
+
+    // task 14
+
+    var a = 2,b=1;
+    var result = --a - --b + ++b + b--;
+    var res1= --a;
+    var res2 =--a - --b;
+    var res3 = --a - --b + ++b;
+    var res4 = --a - --b + ++b + b--;
+
+    document.write("<br/><br/>The Output of --a - --b + ++b + b-- is ",result);
+    document.write("<br/>The Output of --a is ",res1);
+    document.write("<br/>The Output of --a - --b is ",res2);
+    document.write("<br/>The Output of --a - --b + ++b is ",res3);
+    document.write("<br/>The Output of --a = --b + ++b + b-- is ",res4);
+
+    // task 15
+
+    document.write("<h1>Life Time Supply Calculator</h1>");
+    var fvrtSnack = "Oreo Biscuit";
+    var currAge = 21;
+    var maxAge = 60;
+    var estimate = 2;
+    var estimatedEat = (maxAge - currAge)*2;
+
+    document.write("<br/>Favorite Snack : ",fvrtSnack);
+    document.write("<br/>Current Age : ",currAge);
+    document.write("<br/>Estimated Maximum age : ",maxAge);
+    document.write("<br/>Amount of Snack per day : ",estimate);
+    document.write("<br/>You will need ",estimatedEat," ",fvrtSnack," to Last you until the ripe old age of ",maxAge);
+
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

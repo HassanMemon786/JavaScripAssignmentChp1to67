@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IF Else</title>
+    <script>
+      // task 1
+
+      var num = prompt(
+        "Enter a number to check whether it's divisible by 3 or not :"
+      );
+      if (num % 3 == 0) {
+        alert("Number is divisible by 3 ");
+      } else {
+        alert("Number is not divisible by 3 ");
+      }
+
+      // task 2
+
+      var num1 = prompt("Enter a number to check it's even or odd ");
+      if (num1 % 2 == 0) {
+        alert("Even Number ");
+      } else {
+        alert("Odd Number");
+      }
+
+      // task 3
+
+      var age = prompt("Enter your age :");
+      if (age > 18) {
+        alert("Old Enough");
+      } else {
+        alert("Too young");
+      }
+
+      // task 4
+
+      var name = prompt("Enter Your Name :");
+      if (name === "Huzaifa khan") {
+        alert("WellCome <br/>", name);
+      }
+
+      // task 5
+
+      var userNum1 = prompt(
+        "Question 5. \n Enter a number which is divisible by 3."
+      );
+      switch (userNum1 % 3) {
+        case 0:
+          alert("Question 5. \n Number is divisible by 3.");
+          break;
+        default:
+          alert("Question 5. \n Number is not divisible by 3.");
+      }
+
+      // task 6
+      var char = prompt("Enter only single character :");
+      if (char >= "A" && char <= 90) {
+        alert("Capital letter ");
+      } else if (char >= "97" && char <= "122") {
+        alert("small letter");
+      } else {
+        alert("Number");
+      }
+      // task 7
+
+      var number1 = prompt("Enter your first number");
+      var number2 = prompt("Enter your second number");
+      var operator = prompt("Select Operator<br/> +, -, *, / , % ");
+      number1 = parseInt(number1);
+      number2 = parseInt(number2);
+      switch (operator) {
+        case "+":
+          alert(
+            number1 +
+              " " +
+              operator +
+              " " +
+              number2 +
+              " " +
+              "is" +
+              " " +
+              number1 +
+              number2
+          );
+          break;
+        case "-":
+          alert(
+            number1 +
+              " " +
+              operator +
+              " " +
+              number2 +
+              " " +
+              "is" +
+              " " +
+              number1 -
+              number2
+          );
+          break;
+        case "*":
+          alert(
+            number1 +
+              " " +
+              operator +
+              " " +
+              number2 +
+              " " +
+              "is" +
+              " " +
+              number1 * number2
+          );
+          break;
+        case "/":
+          alert(
+            number1 +
+              " " +
+              operator +
+              " " +
+              number2 +
+              " " +
+              "is" +
+              " " +
+              number1 / number2
+          );
+          break;
+        case "%":
+          alert(
+            number1 +
+              " " +
+              operator +
+              " " +
+              number2 +
+              " " +
+              "is" +
+              " " +
+              (number1 % number2)
+          );
+          break;
+        default:
+          alert("Invalid Operator");
+      }
+
+      // task 8
+
+      var userTime = prompt(
+        "Enter a time in 24 hour clock format. Like: 1900 = 7pm"
+      );
+      userTime = parseInt(userTime);
+      if (userTime === parseInt(userTime)) {
+        if (userTime >= 0000 && userTime < 1200) {
+          alert("Question 8. \n Good Mornig!");
+        } else if (userTime >= 1200 && userTime < 1700) {
+          alert("Question 8. \n Good Afternoon!");
+        } else if (userTime >= 1700 && userTime < 2100) {
+          alert("Question 8. \n Good Evening!");
+        } else if (userTime >= 2100 && userTime <= 2359) {
+          alert("Question 8. \n Good Night!");
+        }
+      } else {
+        alert("Enter a valid time.");
+      }
+
+      // task 9
+
+      var leapYear = prompt("Enter a year to check it's leap year or not ");
+      if (leapYear % 4 == 0) {
+        alert("Leap Year ");
+      } else {
+        alert("Not a Leap Year");
+      }
+
+      // task 10
+
+      var corrPassword = "hassan";
+      var askPassword = prompt("Enter Your Password");
+      if (askPassword == "") {
+        alert("Please Enter Your Password");
+      } else if (askPassword === corrPassword) {
+        alert("Correct Password");
+      } else {
+        alert("Incorrect");
+      }
+
+      // task 11
+
+      var firstName = "Hunain";
+      if (firstName === "Usama") {
+        document.write("Hello Fahad!");
+      } else {
+        document.write("<br/> You are not Fahad");
+      }
+
+      // task 12
+
+      var greeting;
+      var hour = 13;
+      if (hour < 18) {
+        greeting = "Good day";
+        document.write(greeting);
+      } else {
+        greeting = "Good evening";
+        document.write(greeting);
+      }
+
+      // task 13
+
+      var num1 = prompt("Enter Number 1 :");
+      var num2 = prompt("Enter Number 2 :");
+      if (num1 > num2) {
+        alert(num1, " is Greater ");
+      } else if (num2 > num1) {
+        alert(num2, " is Greater ");
+      } else if (num1 == num2) {
+        alert("Both ", num1, " and ", num2, " is Equal");
+      }
+
+      // task 14
+
+      var numb3 = prompt("Enter a number");
+      numb3 = parseInt(numb3);
+      if (numb3 === 0) {
+        alert("Zero");
+      } else if (numb3 > 0) {
+        alert("It is a positive number");
+      } else {
+        alert("It is a negative number");
+      }
+
+      // task 16
+
+      var varr = true;
+      if (varr == boolean) {
+        alert("Boolean Type ");
+      } else if (varr == "name") {
+        alert("String Type");
+      } else if (varr > 0 && varr <= 100) {
+        alert("Number Type");
+      } else {
+        alert("Undefined");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
